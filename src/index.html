@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-200 place-items-center">
+    <h1 class="text-center mt-20 lg:mt-12 md:mt-4 sm:mt-2">CALCULATOR</h1>
+    <div class="m-auto flex h-screen w-28 w-64 ">
+        
+        <div class=" m-auto justify-center mt-0 bg-slate-700 rounded-md ">
+            <div class=" m-2 h-24 p-6 bg-slate-900 grid-cols-2">
+              
+                  <div > <input type="text" id="screenDisplay" class="slashed-zero text-right text-white bg-slate-900 rounded-md grid-cols-4" disabled ></div>
+                  <div class="text-lg text-blue-300"><input type="text"  class="text-lg pt-2 pr-4 text-right text-white bg-slate-900 rounded-md grid-cols-4 " disabled id="resultDisplay" ></div>
+                  
+              </div>
+            <div class="grid grid-cols-4 gap-0 grid-rows-3 text-center text-white drop-shadow-lg p-2  ">
+              
+          
+                <div class="bg-slate-900 m-2 p-4 rounded-md cursor-pointer hover:bg-slate-950 text-red-400 " onclick="deleteALL()">C</div>
+                <div class="bg-slate-900 m-2 p-4 rounded-md cursor-pointer hover:bg-slate-950 text-red-400 " onclick="displayNum('/')">/</div>
+                <div class="bg-slate-900 m-2 p-4 rounded-md cursor-pointer hover:bg-slate-950 text-red-400 " onclick="displayNum('*')">X</div>
+               
+                <div class="bg-slate-900 m-2 p-4 rounded-md cursor-pointer hover:bg-slate-950 text-red-400 " onclick="delNum('')">Del</div>
+              
+                <div class="bg-slate-900 m-2 p-4 rounded-md cursor-pointer hover:bg-slate-950 text-blue-300 " onclick="displayNum('7')">7</div>
+                <div class="bg-slate-900 m-2 p-4 rounded-md cursor-pointer hover:bg-slate-950 text-blue-300 " onclick="displayNum('8')">8</div>
+                <div class="bg-slate-900 m-2 p-4 rounded-md cursor-pointer hover:bg-slate-950 text-blue-300 " onclick="displayNum('9')">9</div>
+                <div class="bg-slate-900 m-2 p-4  rounded-md cursor-pointer hover:bg-slate-950 text-red-400 " onclick="displayNum('+')">+</div>
+                
+                <div class="bg-slate-900 m-2 p-4 rounded-md cursor-pointer hover:bg-slate-950 text-blue-300 " onclick="displayNum('4')">4</div>
+                <div class="bg-slate-900 m-2 p-4 rounded-md cursor-pointer hover:bg-slate-950 text-blue-300 " onclick="displayNum('5')">5</div>
+                <div class="bg-slate-900 m-2 p-4  rounded-md cursor-pointer hover:bg-slate-950 text-blue-300 " onclick="displayNum('6')">6</div>
+            
+                <div class="bg-slate-900 m-2 p-4 rounded-md cursor-pointer hover:bg-slate-950 text-red-400 key" onclick="displayNum('-')">-</div>
+           
+       
+                <div class="bg-slate-900 m-2 p-4 cursor-pointer rounded-md text-blue-300 hover:bg-slate-950" onclick="displayNum('1')">1</div>
+                <div class="bg-slate-900 m-2 p-4 cursor-pointer rounded-md text-blue-300 hover:bg-slate-950 " onclick="displayNum('2')">2</div>
+                <div class="bg-slate-900 m-2 p-4 cursor-pointer rounded-md text-blue-300 hover:bg-slate-950 " onclick="displayNum('3')">3</div>
+                <div class="bg-slate-900 m-2 p-4 cursor-pointer row-span-2 pt-12  rounded-md place-content-center text-red-400 hover:bg-slate-950 " onclick="result('')">=</div>
+                <div class="bg-slate-900 m-2  cursor-pointer p-4 rounded-md text-red-400 hover:bg-slate-950 " onclick="displayNum('.')">.</div>
+           
+                <div class="bg-slate-900 m-2 cursor-pointer  p-4 rounded-md text-blue-300 hover:bg-slate-950 " onclick="displayNum('0')">0</div>
+                <div class="bg-slate-900 m-2 p-4 rounded-md cursor-pointer hover:bg-slate-950 text-red-400 "onclick="displayNum('%')">%</div>
+            
+               
+               
+              
+                
+             
+              </div>
+        </div>
+      </div>
+      <script src=
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+              integrity=
+      "sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+              crossorigin="anonymous" 
+              referrerpolicy="no-referrer"></script>
+          <script src=
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+              integrity=
+      "sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+              crossorigin="anonymous" 
+              referrerpolicy="no-referrer"></script>
+      <script src="app.js"></script>
+      
+</body>
+</html>
